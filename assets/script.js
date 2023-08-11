@@ -90,7 +90,7 @@ function mouseOut() {
 }
 
 succesButtonElement.onclick = function () {
-  location.href = "https://eslcs.ro/";
+  location.href = "index.html";
 };
 
 //
