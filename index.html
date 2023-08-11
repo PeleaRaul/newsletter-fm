@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message by. AppoDev
+    </title>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="container">
+      <div class="left">
+        <h2>Stay updated!</h2>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="verifiedtxt">
+          Product discovery and building what matters
+        </div>
+        <div class="verifiedtxt">Measuring to ensure updates are a success</div>
+        <div class="verifiedtxt">And much more!</div>
+        <div class="emailtxt">
+          Email address
+          <div class="invalidemail" id="text">Valid email required</div>
+        </div>
+        <form>
+          <input
+            id="email"
+            class="email"
+            type="email"
+            placeholder="email@company.com"
+            pattern="[a-zA-Z1-9]+@[a-zA-Z1-9]+\.[a-zA-Z]{2,}"
+          />
+        </form>
+        <button class="btn" id="button">Subscribe to monthly newsletter</button>
+      </div>
+      <div class="right"></div>
+    </div>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="succes" hidden="true">
+      <div class="succes-container">
+        <div class="succes-top"></div>
+        <div class="succes-bottom">
+          <h2>Thanks for subscribing!</h2>
+          <div class="succestext" id="succesText"></div>
+          <button class="succes-button" id="succes-button">
+            Dismiss message
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Success message end -->
+
+    <!-- Attribution start -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.linkedin.com/in/pelearauldaniel/">Pelea "AppoDev" Raul-Daniel</a>.
+    </div>
+    <!-- Attribution end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+  </body>
+</html>

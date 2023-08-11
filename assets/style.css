@@ -1,0 +1,442 @@
+/* Main stuff */
+
+@font-face {
+  font-family: roboto-bold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: roboto-regular;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+html {
+  background-color: hsl(234, 29%, 20%);
+  font-family: roboto-regular;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  html {
+    background-color: rgb(255, 255, 255);
+    font-family: roboto-regular;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    position: sticky;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 50vh;
+    max-height: 1000px;
+    width: 100%;
+    max-width: 768px;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+/* Container / Box */
+
+.container {
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  position: relative;
+  margin: auto;
+  margin-top: 150px;
+  color: rgb(27, 25, 61);
+  width: 700px;
+  height: 489px;
+  border-radius: 30px;
+  box-shadow: -10px -5px 50px 12px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin: auto;
+    margin-top: 0px;
+    color: rgb(27, 25, 61);
+    width: auto;
+    max-width: 768px;
+    height: auto;
+    border-radius: 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+}
+
+/* Success Container / Box */
+
+.succes-container {
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  margin-top: 150px;
+  color: rgb(27, 25, 61);
+  width: 400px;
+  height: 400px;
+  border-radius: 30px;
+  box-shadow: -10px -5px 50px 12px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .succes-container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    color: rgb(27, 25, 61);
+    width: auto;
+    max-width: 768px;
+    height: auto;
+    border-radius: 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+}
+
+/* Succes top container */
+
+.succes-top {
+  content: url(images/icon-success.svg);
+  width: 55px;
+  height: 55px;
+  padding-left: 50px;
+  padding-top: 35px;
+  margin-bottom: -5px;
+}
+
+/* Succes bottom container */
+
+.succes-bottom {
+  width: 250px;
+  margin-left: 50px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .succes-top {
+    content: url(images/icon-success.svg);
+    width: 60px;
+    height: 60px;
+    padding-left: 50px;
+    padding-top: 120px;
+    margin-bottom: 5px;
+  }
+
+  .succes-bottom {
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    max-height: 1024px;
+    padding-top: 3px;
+    margin-left: 50px;
+  }
+}
+/* Text from the left w:input value and submit button */
+.left {
+  padding-left: 50px;
+  padding-top: 30px;
+  width: 340px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .left {
+    padding-left: 26px;
+    padding-top: 0px;
+    padding-right: 20px;
+    width: auto;
+    max-width: 768px;
+    padding-right: 20px;
+  }
+}
+
+/* Image from the right! */
+.right {
+  image-resolution: inherit;
+  content: url(images/illustration-sign-up-desktop.svg);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .right {
+    image-resolution: inherit;
+    content: url(images/illustration-sign-up-mobile.svg);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding: 0px;
+    width: auto;
+    max-width: 768px;
+  }
+}
+
+/* Text formatting */
+
+h2 {
+  font-family: roboto-bold;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.emailtxt {
+  color: rgb(36, 28, 80);
+  font-family: roboto-bold;
+  font-size: 10px;
+  padding-top: 22px;
+  margin-bottom: 3px;
+}
+
+.verifiedtxt {
+  font-family: roboto-regular;
+  font-size: 13px;
+  line-height: 25px;
+  color: black;
+  margin-bottom: auto;
+  margin-top: 10px;
+  display: flex;
+}
+
+.verifiedtxt::before {
+  content: url(images/icon-list.svg);
+  margin-right: 10px;
+  size: 50%;
+  align-self: auto;
+}
+
+p {
+  display: inline-flex;
+  font-family: roboto-bold;
+  font-size: 13px;
+}
+
+.invalidemail {
+  font-family: roboto-bold;
+  display: inline-flex;
+  text-align: right;
+  margin-left: 140px;
+  margin-bottom: 3px;
+  color: white;
+  font-size: 12px;
+}
+
+.succestext {
+  margin-top: -15px;
+  font-family: roboto-regular;
+  text-align: left;
+  width: 305px;
+  color: black;
+}
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .succestext {
+    margin-top: -5px;
+    font-family: roboto-regular;
+    text-align: left;
+    width: 305px;
+    color: black;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  h2 {
+    font-family: roboto-bold;
+    font-size: 40px;
+    cursor: default;
+  }
+
+  .emailtxt {
+    color: rgb(36, 28, 80);
+    font-family: roboto-bold;
+    font-size: 12px;
+    padding-top: 22px;
+    margin-bottom: 3px;
+  }
+
+  .verifiedtxt {
+    font-family: roboto-regular;
+    font-size: 16px;
+    line-height: 25px;
+    color: black;
+    margin-bottom: auto;
+    margin-top: 10px;
+    display: flex;
+    align-self: auto;
+    cursor: default;
+  }
+
+  .verifiedtxt::before {
+    content: url(images/icon-list.svg);
+    margin-right: 10px;
+    size: 50%;
+    align-self: auto;
+    cursor: default;
+  }
+
+  p {
+    font-family: roboto-bold;
+    font-size: 13px;
+    cursor: default;
+  }
+}
+
+/* Input container formatting */
+
+input {
+  background-color: rgba(255, 255, 255, 0.377);
+  font-family: roboto;
+  width: 280px;
+  height: 40px;
+  border-color: rgba(172, 172, 172, 0.336);
+  border-width: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+inputarea:focus,
+input:focus {
+  padding-left: 10px;
+  color: rgb(124, 124, 124);
+  font-family: roboto-regular;
+  border: none;
+  border-color: white;
+  outline: none;
+}
+
+input::placeholder {
+  padding-left: 5px;
+  color: rgb(124, 124, 124);
+  font-family: roboto-regular;
+  border: none;
+}
+
+input:invalid {
+  font-family: roboto-regular;
+  color: rgba(255, 0, 0, 0.466);
+  padding-left: 15px;
+  background-color: rgba(255, 167, 167, 0.753);
+  border-color: rgb(255, 0, 0);
+}
+
+input:valid {
+  font-family: roboto-regular;
+  color: rgba(128, 128, 128, 0.712);
+  padding-left: 15px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgba(129, 129, 129, 0.623);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  input {
+    background-color: rgba(255, 255, 255, 0.377);
+    font-family: roboto;
+    width: 100%;
+    max-width: 768px;
+    height: 50px;
+    border-color: rgba(172, 172, 172, 0.425);
+    border-width: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  inputarea:focus,
+  input:focus {
+    width: 100%;
+    padding-left: 15px;
+    color: rgb(124, 124, 124);
+    font-family: roboto-regular;
+    font-size: 15px;
+  }
+
+  input::placeholder {
+    padding-left: 15px;
+    color: rgb(124, 124, 124);
+    font-family: roboto-regular;
+    font-size: 15px;
+  }
+}
+/* button design formatting */
+
+.btn {
+  margin-top: 10px;
+  background-color: rgb(30, 30, 58);
+  color: white;
+  width: 299px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  font-family: roboto-bold;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .btn {
+    margin-top: 40px;
+    background-color: rgb(24, 24, 44);
+    color: white;
+    width: 100%;
+    max-width: 768px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    font-family: roboto-bold;
+  }
+}
+
+/* button succes desing formatting */
+
+.succes-button {
+  margin-top: 30px;
+  background-color: rgb(24, 24, 44);
+  color: white;
+  width: 303px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  font-family: roboto-bold;
+  cursor: pointer;
+}
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .succes-button {
+    margin-top: 83%;
+    background-color: rgb(24, 24, 44);
+    color: white;
+    width: 303px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    font-family: roboto-bold;
+    cursor: pointer;
+  }
+}
+/* Atribution style, just a little bit modified <3 👍  */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  font-family: roboto-regular;
+}
+
+.attribution a {
+  color: hsl(300, 58%, 38%);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .attribution {
+    color: rgba(255, 255, 255, 0);
+    padding-top: 0px;
+    font-size: 0px;
+  }
+}
