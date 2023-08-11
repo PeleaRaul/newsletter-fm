@@ -62,6 +62,7 @@ email.addEventListener("keydown", function (e) {
     buttonElement.style["background-image"] =
       "linear-gradient(90deg, rgb(24, 24, 44) 0%, rgb(24, 24, 44) 100%)";
     buttonElement.style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0)";
+    textElement.style.color = "rgba(0, 0, 0, 0)";
   }
 });
 
