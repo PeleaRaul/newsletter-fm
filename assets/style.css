@@ -41,6 +41,7 @@ html {
 
 .container {
   background-color: rgb(253, 253, 253);
+  align-self: center;
   display: flex;
   position: relative;
   margin: auto;
